@@ -8,6 +8,8 @@ namespace primer_parcial_solid_transporte
 {
     public class TransporteRepository
     {
+        internal readonly object guardarBD;
+
         public void guardar(ITransporte transporte)
         {
             //Este método se encarga de guardar el estado actual del Tren en una base de datos

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace primer_parcial_solid_transporte
 {
-    public class Tren : ITransporte
+    public class Tren : IVehiculoTerrestre
     {
-        public string _nombre;
+    
         public int _velocidadActual;
         public int _velocidadMaxima;
 
@@ -32,15 +32,11 @@ namespace primer_parcial_solid_transporte
             }
         }
 
-        public void Volar(int altitud)
-        {
-            return;
-        }
-
-        public void guardarEnBD()
+  
+        public void guardar(GuardarBD guardarBD)
         {
             TransporteRepository repository = new TransporteRepository();
-            repository.guardar(this);
+            repository.guardarBD;
         }
     }
 }

@@ -8,7 +8,7 @@ namespace primer_parcial_solid_transporte
         static void Main(string[] args)
         {
 
-            List<ITransporte> transportes = new List<ITransporte>();
+            List<IVehiculoAereo> transporteAereo = new List<IVehiculoAereo>();
 
             Avion avion1 = new Avion();
             avion1._nombre = "AVION 01";
@@ -16,7 +16,7 @@ namespace primer_parcial_solid_transporte
             avion1._velocidadMaxima = 100;
             avion1._alturaActual = 0;
             avion1._alturaMaxima = 100;
-            transportes.Add(avion1);
+            transporteAereo.Add((IVehiculoAereo)avion1);
 
             Avion avion2 = new Avion();
             avion2._nombre = "AVION 02";
@@ -24,13 +24,13 @@ namespace primer_parcial_solid_transporte
             avion2._velocidadMaxima = 100;
             avion2._alturaActual = 0;
             avion2._alturaMaxima = 100;
-            transportes.Add(avion2);
+            transporteAereo.Add(avion2);
 
             Tren tren1 = new Tren();
             tren1._nombre = "TREN 01";
             tren1._velocidadActual = 0;
             tren1._velocidadMaxima = 100;
-            transportes.Add(tren1);
+            transporteAereo.Add(tren1);
 
             Console.WriteLine("Inicio del viaje :)");
 
